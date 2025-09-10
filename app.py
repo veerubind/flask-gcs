@@ -63,4 +63,4 @@ if __name__ == '__main__':
     # For local development, set the bucket name and creds in your environment
     if BUCKET_NAME is None:
         print("Warning: GCS_BUCKET_NAME environment variable is not set. GCS features will not work.")
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
